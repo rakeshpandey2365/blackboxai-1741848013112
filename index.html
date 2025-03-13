@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Haven - Hotel & Restaurant</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-playfair font-bold text-gray-800">
+                    Luxury Haven
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-gold-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-gold-600 transition-colors">About</a>
+                    <a href="rooms.html" class="text-gray-800 hover:text-gold-600 transition-colors">Rooms</a>
+                    <a href="restaurant.html" class="text-gray-800 hover:text-gold-600 transition-colors">Restaurant</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-gold-600 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-800" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">About</a>
+                    <a href="rooms.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Rooms</a>
+                    <a href="restaurant.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Restaurant</a>
+                    <a href="contact.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="relative h-full flex items-center justify-center text-center">
+            <div class="max-w-4xl px-6">
+                <h1 class="text-4xl md:text-6xl font-playfair text-white mb-6">Welcome to Luxury Haven</h1>
+                <p class="text-xl md:text-2xl text-white mb-8">Experience unparalleled luxury in our boutique hotel and fine dining restaurant</p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="rooms.html" class="bg-white text-gray-900 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors">Book a Room</a>
+                    <a href="restaurant.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-gray-900 transition-colors">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <i class="fas fa-bed text-4xl text-gray-800 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Luxurious Rooms</h3>
+                    <p class="text-gray-600">Experience comfort in our elegantly designed rooms with modern amenities</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-utensils text-4xl text-gray-800 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Fine Dining</h3>
+                    <p class="text-gray-600">Savor exquisite cuisine prepared by our world-class chefs</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-spa text-4xl text-gray-800 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Wellness Spa</h3>
+                    <p class="text-gray-600">Rejuvenate your senses with our premium spa services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg" alt="Hotel Interior" class="rounded-lg shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-playfair mb-6">Experience Luxury Like Never Before</h2>
+                    <p class="text-gray-600 mb-6">Nestled in the heart of the city, Luxury Haven offers an unforgettable experience combining elegant accommodation with world-class dining. Our commitment to excellence ensures every stay is memorable.</p>
+                    <a href="about.html" class="inline-block bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-playfair mb-4">Fine Dining Experience</h2>
+                <p class="text-gray-600">Indulge in culinary excellence at our award-winning restaurant</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg" alt="Dish 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold mb-2">Signature Dishes</h3>
+                        <p class="text-gray-600">Experience our chef's specially curated menu</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Dish 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold mb-2">Wine Selection</h3>
+                        <p class="text-gray-600">Choose from our extensive wine collection</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg" alt="Restaurant Interior" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-semibold mb-2">Ambient Setting</h3>
+                        <p class="text-gray-600">Dine in an elegant and sophisticated atmosphere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-playfair mb-4">Luxury Haven</h3>
+                    <p class="text-gray-400">Experience luxury and comfort in the heart of the city</p>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms</a></li>
+                        <li><a href="restaurant.html" class="text-gray-400 hover:text-white transition-colors">Restaurant</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>123 Luxury Street, City</li>
+                        <li><i class="fas fa-phone mr-2"></i>+1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@luxuryhaven.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxury Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
