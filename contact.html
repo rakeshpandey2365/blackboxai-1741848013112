@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Luxury Haven</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-playfair font-bold text-gray-800">
+                    Luxury Haven
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-gold-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-gold-600 transition-colors">About</a>
+                    <a href="rooms.html" class="text-gray-800 hover:text-gold-600 transition-colors">Rooms</a>
+                    <a href="restaurant.html" class="text-gray-800 hover:text-gold-600 transition-colors">Restaurant</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-gold-600 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-800" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">About</a>
+                    <a href="rooms.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Rooms</a>
+                    <a href="restaurant.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Restaurant</a>
+                    <a href="contact.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-20">
+        <div class="h-96 bg-[url('https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative h-full flex items-center justify-center text-center">
+                <div class="max-w-4xl px-6">
+                    <h1 class="text-4xl md:text-6xl font-playfair text-white mb-6">Contact Us</h1>
+                    <p class="text-xl text-white">Get in touch with our team</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center p-8 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-gray-800 rounded-full flex items-center justify-center">
+                        <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Location</h3>
+                    <p class="text-gray-600">123 Luxury Street</p>
+                    <p class="text-gray-600">City, State 12345</p>
+                    <p class="text-gray-600">Country</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-gray-800 rounded-full flex items-center justify-center">
+                        <i class="fas fa-phone text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Phone</h3>
+                    <p class="text-gray-600">Front Desk: +1 234 567 890</p>
+                    <p class="text-gray-600">Reservations: +1 234 567 891</p>
+                    <p class="text-gray-600">Restaurant: +1 234 567 892</p>
+                </div>
+                <div class="text-center p-8 bg-gray-50 rounded-lg">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-gray-800 rounded-full flex items-center justify-center">
+                        <i class="fas fa-envelope text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Email</h3>
+                    <p class="text-gray-600">info@luxuryhaven.com</p>
+                    <p class="text-gray-600">reservations@luxuryhaven.com</p>
+                    <p class="text-gray-600">dining@luxuryhaven.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-playfair mb-4">Send Us a Message</h2>
+                <p class="text-gray-600">We'd love to hear from you</p>
+            </div>
+            <form id="contact-form" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                    </div>
+                </div>
+                <div>
+                    <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                    <input type="text" id="subject" name="subject" required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="6" required
+                        class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-800"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-playfair mb-4">Find Us</h2>
+                <p class="text-gray-600">Located in the heart of the city</p>
+            </div>
+            <div class="h-96 bg-gray-200 rounded-lg overflow-hidden">
+                <!-- Replace with actual map embed code -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596552044!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1645564756836!5m2!1sen!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-playfair mb-4">Luxury Haven</h3>
+                    <p class="text-gray-400">Experience luxury and comfort in the heart of the city</p>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms</a></li>
+                        <li><a href="restaurant.html" class="text-gray-400 hover:text-white transition-colors">Restaurant</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>123 Luxury Street, City</li>
+                        <li><i class="fas fa-phone mr-2"></i>+1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@luxuryhaven.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxury Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission handling
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add form submission logic here
+            alert('Thank you for your message. We will get back to you soon!');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
