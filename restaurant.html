@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Luxury Haven</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="font-poppins">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-playfair font-bold text-gray-800">
+                    Luxury Haven
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-800 hover:text-gold-600 transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-800 hover:text-gold-600 transition-colors">About</a>
+                    <a href="rooms.html" class="text-gray-800 hover:text-gold-600 transition-colors">Rooms</a>
+                    <a href="restaurant.html" class="text-gray-800 hover:text-gold-600 transition-colors">Restaurant</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-gold-600 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-gray-800" id="mobile-menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Home</a>
+                    <a href="about.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">About</a>
+                    <a href="rooms.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Rooms</a>
+                    <a href="restaurant.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Restaurant</a>
+                    <a href="contact.html" class="block px-3 py-2 text-gray-800 hover:bg-gray-100 rounded-md">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative pt-20">
+        <div class="h-96 bg-[url('https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg')] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="relative h-full flex items-center justify-center text-center">
+                <div class="max-w-4xl px-6">
+                    <h1 class="text-4xl md:text-6xl font-playfair text-white mb-6">Fine Dining Experience</h1>
+                    <p class="text-xl text-white">Savor exquisite cuisine in an elegant setting</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Restaurant -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-playfair mb-6">Culinary Excellence</h2>
+                    <p class="text-gray-600 mb-6">Our restaurant offers an unforgettable dining experience, combining innovative cuisine with traditional flavors. Led by our award-winning Executive Chef, we create dishes that celebrate local ingredients while incorporating international culinary techniques.</p>
+                    <p class="text-gray-600 mb-8">Each dish is carefully crafted to provide a perfect balance of flavors, textures, and visual appeal, making every meal a memorable experience.</p>
+                    <button class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors">Reserve a Table</button>
+                </div>
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Fine Dining" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-playfair mb-4">Our Menu</h2>
+                <p class="text-gray-600">A selection of our finest dishes</p>
+            </div>
+            
+            <!-- Starters -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-playfair mb-8 text-center">Starters</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">Seared Scallops</h4>
+                            <span class="text-gray-800">$24</span>
+                        </div>
+                        <p class="text-gray-600">Pan-seared scallops with cauliflower purée and truffle oil</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">Duck Foie Gras</h4>
+                            <span class="text-gray-800">$28</span>
+                        </div>
+                        <p class="text-gray-600">House-made foie gras terrine with brioche and fig jam</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-playfair mb-8 text-center">Main Courses</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">Wagyu Beef Tenderloin</h4>
+                            <span class="text-gray-800">$65</span>
+                        </div>
+                        <p class="text-gray-600">Grade A5 Wagyu with truffle mashed potatoes and seasonal vegetables</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">Chilean Sea Bass</h4>
+                            <span class="text-gray-800">$52</span>
+                        </div>
+                        <p class="text-gray-600">Miso-glazed sea bass with baby bok choy and ginger rice</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div>
+                <h3 class="text-2xl font-playfair mb-8 text-center">Desserts</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">Chocolate Soufflé</h4>
+                            <span class="text-gray-800">$18</span>
+                        </div>
+                        <p class="text-gray-600">Warm chocolate soufflé with vanilla bean ice cream</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-semibold">Crème Brûlée</h4>
+                            <span class="text-gray-800">$16</span>
+                        </div>
+                        <p class="text-gray-600">Classic vanilla bean crème brûlée with fresh berries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine Selection -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-playfair mb-4">Wine Collection</h2>
+                <p class="text-gray-600">Carefully curated selection of fine wines</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-wine-bottle text-4xl text-gray-800 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Old World Wines</h3>
+                    <p class="text-gray-600">Premium selections from France, Italy, and Spain</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-wine-glass-alt text-4xl text-gray-800 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">New World Wines</h3>
+                    <p class="text-gray-600">Exceptional wines from California, Australia, and South America</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-glass-cheers text-4xl text-gray-800 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Champagne</h3>
+                    <p class="text-gray-600">Prestigious champagnes for special occasions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Dining -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-playfair mb-6">Private Dining</h2>
+                    <p class="text-gray-600 mb-6">Host your special occasions in our elegant private dining rooms. Perfect for corporate events, celebrations, or intimate gatherings.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Customized menus</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Dedicated service staff</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Wine pairing options</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i>Elegant private spaces</li>
+                    </ul>
+                    <button class="bg-gray-800 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors">Inquire Now</button>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg" alt="Private Dining Room" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-gray-900 rounded-lg p-12 text-center text-white">
+                <h2 class="text-3xl font-playfair mb-6">Make a Reservation</h2>
+                <p class="text-gray-300 mb-8">Reserve your table for an unforgettable dining experience</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <a href="tel:+12345678900" class="flex items-center">
+                        <i class="fas fa-phone mr-2"></i>
+                        +1 234 567 8900
+                    </a>
+                    <span class="hidden md:inline">|</span>
+                    <a href="mailto:dining@luxuryhaven.com" class="flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        dining@luxuryhaven.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <h3 class="text-xl font-playfair mb-4">Luxury Haven</h3>
+                    <p class="text-gray-400">Experience luxury and comfort in the heart of the city</p>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white transition-colors">Rooms</a></li>
+                        <li><a href="restaurant.html" class="text-gray-400 hover:text-white transition-colors">Restaurant</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>123 Luxury Street, City</li>
+                        <li><i class="fas fa-phone mr-2"></i>+1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i>info@luxuryhaven.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Luxury Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
